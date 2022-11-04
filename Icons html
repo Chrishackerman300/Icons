@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ccd204de71.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="icon.css">
+    <title>Iconos</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container-logo">
+            <a href="#"><img class="container-logo__img" src="5a631e30cd478440c20da8c5578dd77c-discos-con-logo-circular.png" alt="logo"></a>
+            <h1>Iconos en HTML y CSS</h1>
+        </div>
+
+        <nav class="navegation">
+            <a href="#">Home</a>
+            <a href="#">Gallery</a>
+            <a href="#">About Us</a>
+            <a href="#">Settings</a>
+    </header>
+
+    <main class="main">
+        <article class="article">
+            <div class="article__container">
+                <h2>Iconos en HTML y CSS</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae quas enim, similique id doloribus expedita aperiam sunt a ullam, 
+                    recusandae excepturi velit voluptas accusantium debitis illo ea ad reprehenderit ducimus? Lorem ipsum, dolor sit amet consectetur 
+                    adipisicing elit. Odio vitae, quos labore quae animi nemo tempore, natus eius nisi modi rerum ducimus est, quibusdam aliquam culpa 
+                    voluptates veniam dolores hic! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim provident aperiam necessitatibus quas
+                    esse sapiente reprehenderit ipsum mollitia expedita, iure sit officia id quod, consectetur magni neque. Inventore, iste natus? <br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae quas enim, similique id doloribus expedita aperiam sunt a ullam, 
+                    recusandae excepturi velit voluptas accusantium debitis illo ea ad reprehenderit ducimus? Lorem ipsum, dolor sit amet consectetur 
+                    adipisicing elit. Odio vitae, quos labore quae animi nemo tempore, natus eius nisi modi rerum ducimus est, quibusdam aliquam culpa 
+                    voluptates veniam dolores hic! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim provident aperiam necessitatibus quas
+                    esse sapiente reprehenderit ipsum mollitia expedita, iure sit officia id quod, consectetur magni neque. Inventore, iste natus? <br> <br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae quas enim, similique id doloribus expedita aperiam sunt a ullam, 
+                    recusandae excepturi velit voluptas accusantium debitis illo ea ad reprehenderit ducimus? Lorem ipsum, dolor sit amet consectetur 
+                    adipisicing elit. Odio vitae, quos labore quae animi nemo tempore, natus eius nisi modi rerum ducimus est, quibusdam aliquam culpa 
+                    voluptates veniam dolores hic! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim provident aperiam necessitatibus quas
+                    esse sapiente reprehenderit ipsum mollitia expedita, iure sit officia id quod, consectetur magni neque. Inventore, iste natus? <br> <br>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae quas enim, similique id doloribus expedita aperiam sunt a ullam, 
+                    recusandae excepturi velit voluptas accusantium debitis illo ea ad reprehenderit ducimus? Lorem ipsum, dolor sit amet consectetur 
+                    adipisicing elit. Odio vitae, quos labore quae animi nemo tempore, natus eius nisi modi rerum ducimus est, quibusdam aliquam culpa 
+                    voluptates veniam dolores hic! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim provident aperiam necessitatibus quas
+                    esse sapiente reprehenderit ipsum mollitia expedita, iure sit officia id quod, consectetur magni neque. Inventore, iste natus?
+
+                </p>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="container-footer__img">
+                <a href="#"><img class="container-logo__img" src="5a631e30cd478440c20da8c5578dd77c-discos-con-logo-circular.png" alt="logo"></a>
+            </div>
+            <div class="container-footer__h2">
+                <h2>About Us</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur <br> adipisicing elit. Esse, minus. Totam ex distinctio, <br> 
+                    dignissimos sint iste atque.
+                </p>
+            </div>
+            <div class="container-footer__redes">
+                <h2>Social Networks</h2>
+                <a href="https://www.facebook.com/ChristianArmstrong0i/" target="_blankhttps://www.facebook.com/ChristianArmstrong0i/"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://www.instagram.com/christianmendoza_08/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UC-upd_qwS5hwGYUlySJkbIQ/featured" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://github.com/Chrishackerman300" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-f">
+            @ProgramadorJS 2022 Derechos Reservados
+        </div>
+    </footer>
+</body>
+</html>
