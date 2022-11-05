@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: #212F3C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+.logo{
+    display: flex;
+    color: #fff;
+    align-items: center;
+    font-size: 1.3rem;
+    font-family: sans-serif;
+}
+
+.logo-img{
+    width: 100px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 15px;
+    padding: 15px 0px;
+}
+
+.navegation a{
+    color: #fff;
+    margin-right: 10px;
+    padding: 10px;
+    font-size: 19px;
+    font-family: 'Poppins';
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.navegation a:hover{
+    background-color: #566573;
+}
+
+.main{
+    margin-top: 155px;
+}
+
+.article-uno h2{
+    padding: 15px;
+    text-align: center;
+    background-color: #566573;
+    color: #fff;
+    font-family: 'Poppins';
+    font-size: 2.1rem;
+    letter-spacing: 5px;
+}
+
+.article-uno p{
+    padding: 15px;
+    font-size: 1.3rem;
+    line-height: 30px;
+    font-family: sans-serif;
+    text-align: justify;
+}
+
+.lorem-image{
+    width: 450px;
+    margin-top: 10px;
+    border-radius: 25px;
+    border: solid 5px #000;
+    margin-bottom: 20px;
+}
+
+.footer{
+    background-color: #212F3C;
+}
+
+.container-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-footer__Info{
+    padding: 5px;
+}
+
+.container-footer__Info h2{
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+}
+
+.container-footer__Info p{
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Poppins';
+    text-align: justify;
+}
+
+.container-footer__redes{
+    padding: 5px;
+    padding-right: 20px ;
+}
+
+.container-footer__redes h2{
+    color: #fff;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+}
+
+.links{
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Poppins';
+    padding-right: 10px;
+    display: flex;
+    line-height: 60px;
+    text-decoration: none;
+}
+
+.icon{
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+    line-height: 35px;
+    background-color: #17202A;
+    padding: 10px;
+    transition: all linear;
+}
+
+.icon:hover{
+    background-color: #566573;
+}
+
+.final-container{
+    text-align: center;
+    padding-top: 10px;
+    color: #fff;
+    font-size: 1.1rem;
+    margin-left: 10px;
+    font-family: 'Poppins';
+}
