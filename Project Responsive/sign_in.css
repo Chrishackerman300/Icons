@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20200630/pngtree-blueprint-digital-paper-background-design-super-high-resolution-image_340503.jpg);
+}
+
+.form{
+    background-color: #fff;
+    padding: 3px;
+    margin-top: 150px;
+}
+
+h1{
+    text-align: center;
+    color: #212F3D;
+    font-family: 'Poppins';
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.container{
+    padding: 15px;
+    width: 100%;
+}
+
+.container-input{
+    font-size: 22px;
+    color: #212F3D;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+input[type="email"]{
+    margin-left: 10px;
+    font-size: 1.3rem;
+    font-family: sans-serif;
+    border: none;
+    width: 91%;
+}
+
+input[type="password"]{
+    margin-left: 10px;
+    font-size: 1.3rem;
+    font-family: sans-serif;
+    border: none;
+    width: 91%;
+}
+
+.button{
+    margin-top: 20px;
+}
+
+input[type="submit"]{
+    width: 100%;
+    padding: 10px;
+    background-color: #212F3D;
+    color: #fff;
+    font-size: 1.4rem;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover{
+    background-color: cadetblue;
+    font-weight: 700;
+}
+
+p{
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.p-link{
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.p-link:hover{
+    color: red;
+    font-size: 1.4rem;
+}
+
+/*Reponsive*/
+@media screen and (min-width: 767px){
+
+    .form{
+        border-radius: 25px;
+        margin: auto;
+        width: 520px;
+        margin-top: 100px;
+        padding: 10px;
+    }
+
+    .container-input{
+        font-size: 19px;
+        margin-right: 30px;
+        margin-bottom: 15px;
+   }
+
+   input[type="email"]{
+    font-size: 1.2rem;
+   }
+
+   input[type="password"]{
+    font-size: 1.2rem;
+   }
+
+   input[type="submit"]{
+    width: 95%;
+   }
+
+   p{
+    margin: 0px 15px;
+    padding: 10px 0px;
+    line-height: 28px;
+   }
+}
