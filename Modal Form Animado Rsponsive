@@ -1,0 +1,350 @@
+/*HTML*/
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Modal Form (ProgramadorJS)</title>
+</head>
+<body>
+    <div class="container__btn">
+        <a href="#target" class="link__modal">Ver Modal</a>
+    </div>
+
+    <section class="modal" id="target">
+        <div class="modal__container container">
+            <figure class="modal__picture">
+                <img src="/img/modal-banner.svg" alt="modal-image" class="modal__img">
+            </figure>
+
+            <div class="modal__form">
+                <form class="form">
+                    <div class="form__texts">
+                        <h2 class="title">Unete Ahora!</h2>
+                        <p class="paragraph">Solo con registrarte ahora, podras unirte y trabajar a remoto en nuestra empresa, y ganar dienro facilmente.</p>
+                    </div>
+
+                    <div class="container__inputs">
+                        <input type="text" class="input" placeholder=" ">
+                        <label class="input__label">Enter your Name:</label>
+                        <span class="input__bar"></span>
+                    </div>
+
+                    <div class="container__inputs">
+                        <input type="text" class="input" placeholder=" ">
+                        <label class="input__label">Enter your Last Name:</label>
+                        <span class="input__bar"></span>
+                    </div>
+
+                    <div class="container__inputs">
+                        <input type="tel" class="input" placeholder=" ">
+                        <label class="input__label">Enter your Phone:</label>
+                        <span class="input__bar"></span>
+                    </div>
+
+                    <div class="container__inputs">
+                        <input type="email" class="input" placeholder=" ">
+                        <label class="input__label">Enter your Email:</label>
+                        <span class="input__bar"></span>
+                    </div>
+
+                    <div class="container__inputs">
+                        <input type="password" class="input" placeholder=" ">
+                        <label class="input__label">Enter your Password:</label>
+                        <span class="input__bar"></span>
+                    </div>
+
+                    <a href="#" class="submit__btn">
+                        <span class="sumbit__paragraph">Register</span>
+                    </a>
+                </form>
+            </div>
+
+            <a href="#" class="modal__close">X</a>
+        </div>
+    </section>
+</body>
+</html>
+
+/*CSS3*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    font-family: sans-serif;
+}
+
+.container__btn{
+    width: 100%;
+    padding-top: 25em;
+    display: flex;
+}
+
+.link__modal{
+    display: block;
+    width: 250px;
+    margin: auto;
+    background: #45B39D;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+    transition: all .5s ease;
+}
+
+.link__modal:hover{
+    background: #6C63FF;
+}
+
+.modal{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.182);
+    clip-path: circle(0.4% at 100% 0);
+    transition: clip-path .7s ease;
+}
+
+.modal:target{
+    clip-path: circle(141.2% at 100% 0);
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 80px auto;
+    height: 80vh;
+    /* overflow: hidden; */
+    background: #fff;
+}
+
+.modal__container{
+    box-shadow: 0 0 100vmax rgba(0,0,0,.4);
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 20px;
+    /* padding: 40px; */
+}
+
+.modal__container::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #6C63FF;
+    clip-path: polygon(52% 0, 100% 0%, 100% 100%, 41% 100%);
+    z-index: -1;
+}
+
+.modal__picture{
+    width: 50%;
+}
+
+.modal__img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: drop-shadow(0 0 15px rgba(0,0,0,.5));
+}
+
+.form{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+}
+
+.form__texts{
+    width: 100%;
+    text-align: center;
+}
+
+.title{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #34495E;
+    margin-bottom: 20px;
+}
+
+.paragraph{
+    width: 100%;
+    text-align: left;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #808B96;
+}
+
+.container__inputs{
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.input{
+    width: 100%;
+    position: relative;
+    padding: 10px 15px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #85929E;
+    transform-origin: left bottom;
+    transition: transform .5s ease;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.input__label{
+    position: absolute;
+    left: 0;
+    top: 10px;
+    font-size: 1rem;
+    color: #85929E;
+    transition: transform .4s ease;
+}
+
+.input__bar{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: transform, .4s, color;
+}
+
+.input:focus ~ .input__bar{
+    border-bottom: 1px solid #6C63FF;
+    transform-origin: left bottom;
+}
+
+.input:focus + .input__label,
+.input:not(:placeholder-shown) + .input__label{
+    transform: scale(.7) translateY(-30px);
+    left: -5px;
+    color: #6C63FF;
+}
+
+.submit__btn{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    background: #58D68D;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.182);
+    position: relative;
+}
+
+.submit__btn::before{
+    content: "";
+    display: block;
+    width: 93%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #6C63FF;
+    border-radius: 5px;
+    padding: 10px;
+    clip-path: circle(0 at left);
+    transition: clip-path .7s ease;
+}
+
+.submit__btn:hover::before{
+    clip-path: circle(150% at left);
+}
+
+.sumbit__paragraph{
+    position: relative;
+    z-index: 1;
+}
+
+.modal__close{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: crimson;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    box-shadow: 0 0 3px rgba(0,0,0,.5);
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+@media screen and (max-width: 768px){
+    body{
+        width: 100%;
+        height: 100%;
+    }
+
+    .modal{
+        width: 100%;
+        height: auto;
+    }
+
+    .container{
+        width: 90%;
+        max-width: 1200px;
+        height: 100%;
+    }
+
+    .modal__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .modal__container::before{
+        background-color: #fff;
+    }
+
+    .modal__picture{
+        width: 100%;
+    }
+
+    .form{
+        width: 100%;
+    }
+
+    .title{
+        font-size: 1.8rem;
+    }
+
+    .paragraph{
+        font-size: 1rem;
+    }
+
+    .submit__btn::before{
+        width: 95%;
+    }
+}
