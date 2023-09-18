@@ -1,0 +1,272 @@
+/*HTML*/
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario Animado</title>
+</head>
+<body>
+    <section class="content">
+        <form class="form">
+            <div class="form__texts">
+                <h2 class="title">Registrate</h2>
+                <p class="paragraph">Registrate hoy mismo! Para que puedas obtener nuestros beneficios que ofrecemos como tienda. Si ya tienes cuenta <a href="#" class="link">click aqui</a>.</p>
+            </div>
+
+            <div class="form__inputs">
+                <input type="text" class="input" placeholder=" ">
+                <label class="input__label">Enter your Name:</label>
+                <span class="input__bar"></span>
+            </div>
+
+            <div class="form__inputs">
+                <input type="text" class="input" placeholder=" ">
+                <label class="input__label">Enter your Last Name:</label>
+                <span class="input__bar"></span>
+            </div>
+
+            <div class="form__inputs">
+                <input type="tel" class="input" placeholder=" ">
+                <label class="input__label">Enter your Phone</label>
+                <span class="input__bar"></span>
+            </div>
+
+            <div class="form__inputs">
+                <input type="email" class="input" placeholder=" ">
+                <label class="input__label">Enter your Last Email:</label>
+                <span class="input__bar"></span>
+            </div>
+
+            <div class="form__inputs">
+                <input type="password" class="input" placeholder=" ">
+                <label class="input__label">Enter your Password:</label>
+                <span class="input__bar"></span>
+            </div>
+
+            <div class="button">
+                <button type="submit" class="btn">Registrarse</button>
+            </div>
+
+            <div class="form__texts">
+                <p class="paragraph paragraph--n2">Revisa todos nuestros <a href="#" class="link">Terminos y Condiciones</a>, lee acerca de nuestras <a href="#" class="link">Politicas de Privacidad</a>.</p>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
+
+/*CSS3*/
+
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@300&family=Bai+Jamjuree:wght@300;400;500;600;700&family=Barlow+Semi+Condensed:ital,wght@0,500;1,600&family=Big+Shoulders+Display:wght@700&family=Fraunces:opsz,wght@9..144,700&family=Hanken+Grotesk:wght@300;500;700;800&family=Indie+Flower&family=Inter:wght@300;400;600;700&family=Karla:ital,wght@0,300;0,400;0,600;1,700&family=Kumbh+Sans:wght@400;700&family=Lato:wght@300;400;700&family=League+Spartan:wght@400;500;700&family=Lexend+Deca&family=Montserrat:wght@300;400;500;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display&family=Poppins:wght@300;400;500;600;700;800&family=Prata&family=Public+Sans:ital,wght@0,300;0,600;0,700;1,400&family=Raleway:wght@400;700&family=Red+Hat+Display:wght@300;400;500;600;700;900&family=Roboto:wght@300;400;500&family=Rubik:wght@400;500;700&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#1c92d2, #f2fcfe);
+}
+
+.content{
+    width: 90%;
+    max-width: 1200px;
+    height: 85vh;
+    margin: 80px auto;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(6,1fr);
+    position: relative;
+}
+
+.content::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    background-image: url(https://previews.123rf.com/images/prapann/prapann1709/prapann170900204/85774952-registros-de-corte-de-madera-secci%C3%B3n-para-la-decoraci%C3%B3n-la-textura-de-fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    clip-path: circle(0 at top left);
+    animation: image 1.5s ease forwards;
+}
+
+.form{
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    grid-column: 1/4;
+    grid-row: 1/-1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateY(-100%);
+    animation: form .5s 1s ease forwards;
+    position: relative;
+    z-index: 1;
+}
+
+.form__texts{
+    width: 100%;
+    text-align: center;
+}
+
+.title{
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: #2E4053;
+    margin-bottom: 20px;
+}
+
+.paragraph{
+    width: 90%;
+    text-align: left;
+    font-family: 'Open Sans';
+    font-weight: 500;
+    color: #5D6D7E;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+.form__inputs{
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.input{
+    width: 100%;
+    position: relative;
+    border: none;
+    background: transparent;
+    height: 40px;
+    outline: none;
+    border-bottom: 1px solid #34495E;
+}
+
+.input__label{
+    position: absolute;
+    top: 0;
+    left: 5px;
+    pointer-events: none;
+    font-size: 1rem;
+    color: #85929E;
+    transform: scale(1);
+    transition: transform .5s ease;
+}
+
+.input__bar{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    transform: scale(0);
+    transition: all .4s ease;
+}
+
+.input:focus ~ .input__bar{
+    transform: scale(1);
+    transform-origin: left bottom;
+    border-bottom: 1px solid #85C1E9;
+}
+
+.input:focus + .input__label, .input:not(:placeholder-shown) + .input__label{
+    transform: scale(.7) translateY(-30px);
+    color: #5DADE2;
+    font-weight: 600;
+    left: -5px;
+}
+
+.paragraph--n2{
+    text-align: center;
+}
+
+.button{
+    width: 100%;
+}
+
+.btn{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: #2980B9;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.btn:hover{
+    background: #5DADE2;
+}
+
+.link{
+    color: #5DADE2;
+    font-weight: 500;
+    transition: all .5s ease;
+}
+
+.link:hover{
+    color: #F44336;
+}
+
+/*Animations*/
+@keyframes image {
+    to{
+        clip-path: circle(150% at top left);
+    }
+}
+
+@keyframes form {
+    to{
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 768px){
+    .content{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    }
+
+    .form{
+        display: block;
+        width: 100%;
+        padding: 10px;
+        grid-column: span 1;
+    }
+
+    .title{
+        font-size: 1.5rem;
+    }
+
+    .paragraph{
+        width: 90%;
+        text-align: center;
+    }
+
+    .input{
+        width: 90%;
+    }
+
+    .btn{
+        width: 95%;
+        margin: 0 auto;
+    }
+}
