@@ -1,0 +1,257 @@
+/*HTML*/
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Dark Mode JavaScript</title>
+</head>
+<body class="darkmode">
+    <header class="hero">
+        <nav class="navegation__hero">
+            <figure class="navegation__picture">
+                <img src="/img/plantilla-logotipo-profesional-finanzas-empresariales_1948-3348-removebg-preview.png" alt="logo" class="navegation__logo">
+            </figure>
+
+            <div class="navegation__list">
+                <a href="#" class="links">Home</a>
+                <a href="#" class="links">About Us</a>
+                <a href="#" class="links">Terms</a>
+                <a href="#" class="links">Contact</a>
+                <a href="#" class="links">Sign In</a>
+            </div>
+
+            <button class="button__dark">
+                <i class="bi bi-moon-fill icon"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main id="principal">
+        <section class="content">
+            <div class="content__container container">
+                <h1 class="title">Como poner el modo oscuro en tu pagina web</h1>
+                <p class="user">By <a href="#" class="user__link">ProgramadorJS</a></p>
+
+                <figure class="content__picture">
+                    <img src="/img/Dark-Mode-Hero.jpg" alt="banner" class="content__img">
+                </figure>
+
+                <div class="content__texts">
+                    <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus cum voluptatum, porro accusantium dicta minus repudiandae voluptates aperiam aliquid optio ipsum nihil ab laboriosam atque ipsa id praesentium quasi sunt.</p>
+                    <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. <strong>Doloribus cum voluptatum, porro accusantium dicta minus repudiandae voluptates</strong> aperiam aliquid optio ipsum nihil ab laboriosam atque ipsa id praesentium quasi sunt.</p>
+                    <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. <strong>Doloribus cum voluptatum, porro accusantium dicta minus repudiandae voluptates</strong> Doloribus cum voluptatum, porro accusantium dicta minus repudiandae voluptates aperiam aliquid optio ipsum nihil ab laboriosam atque ipsa id praesentium quasi sunt.</p>
+                    <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. <strong>Doloribus cum voluptatum, porro accusantium dicta minus repudiandae voluptates</strong> Doloribus cum voluptatum, porro accusantium dicta minus repudiandae voluptates aperiam aliquid optio ipsum nihil ab laboriosam atque ipsa id praesentium quasi sunt.</p>
+                    
+                    <blockquote class="cita">
+                        <p class="block__paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum sapiente iure dolor est consectetur inventore mollitia facilis optio ipsa omnis itaque corporis laboriosam necessitatibus eaque eius repudiandae, accusantium ad ullam? Quae tenetur vero quas fugiat!</p>
+                    </blockquote>
+
+                    <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. <strong>Doloribus cum voluptatum, porro accusantium dicta minus repudiandae voluptates</strong> Doloribus cum voluptatum, porro accusantium dicta minus repudiandae voluptates aperiam aliquid optio ipsum nihil ab laboriosam atque ipsa id praesentium quasi sunt.</p>
+                    <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. <strong>Doloribus cum voluptatum, porro accusantium dicta minus repudiandae voluptates</strong> Doloribus cum voluptatum, porro accusantium dicta minus repudiandae voluptates aperiam aliquid optio ipsum nihil ab laboriosam atque ipsa id praesentium quasi sunt.</p>
+                    <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. <strong>Doloribus cum voluptatum, porro accusantium dicta minus repudiandae voluptates</strong> Doloribus cum voluptatum, porro accusantium dicta minus repudiandae voluptates aperiam aliquid optio ipsum nihil ab laboriosam atque ipsa id praesentium quasi sunt.</p>
+                    <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. <strong>Doloribus cum voluptatum, porro accusantium dicta minus repudiandae voluptates</strong> Doloribus cum voluptatum, porro accusantium dicta minus repudiandae voluptates aperiam aliquid optio ipsum nihil ab laboriosam atque ipsa id praesentium quasi sunt.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
+/*CSS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Estilizo la clase para que cambie a modo oscuro*/
+.darkmode{
+    background: #17202A;
+    color: #e7f0fd;
+    transition: all .5s ease;
+} 
+
+/*Header de la Pagina*/
+.hero{
+    width: 100%;
+    background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+    overflow: hidden;
+}
+
+.navegation__hero{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 20px;
+
+}
+
+.navegation__picture{
+    width: 20%;
+}
+
+.navegation__logo{
+    display: block;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.navegation__list{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.links{
+    display: block;
+    height: 100px;
+    line-height: 100px;
+    text-decoration: none;
+    font-weight: 500;
+    color: #34495E;
+    padding: 10px;
+    transition: all .5s ease;
+}
+
+.links:hover{
+    background: #e7f0fd;
+}
+
+.button__dark{
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.icon{
+    display: block;
+    font-size: 25px;
+    color: #34495E;
+    transform: scale(.8);
+}
+
+.icon:hover{
+    transform: scale(1);
+    transition: transform .6s ease;
+}
+
+/*Contenido de la Pagina*/
+.content{
+    width: 100%;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.title{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #34495E;
+    margin-bottom: 20px;
+}
+
+.user{
+    font-size: 1rem;
+    color: #34495E;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.user__link{
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #F39C12;
+}
+
+.content__picture{
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+    margin-bottom: 40px;
+    border-radius: 5px;
+}
+
+.content__img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.paragraph{
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.cita{
+    width: 90%;
+    margin: 30px auto;
+    background: #2ECC71;
+    border-radius: 6px;
+    padding: 20px;
+    border-left: 13px solid #82E0AA;
+}
+
+.block__paragraph{
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5;
+    text-align: justify;
+    color: #34495E;
+}
+
+/*Estilizo algunas etiquetas ya estando en el modo oscuro*/
+.darkmode .title{
+    color: #fff;
+}
+
+.darkmode .user{
+    color: #fff;
+}
+
+.darkmode .content__picture{
+    box-shadow: 0 0 10px rgba(255,255,255,.5);
+    border-radius: 5px;
+}
+
+.darkmode strong{
+    font-weight: 300;
+}
+
+.darkmode .block__paragraph{
+    color: #fff;
+}
+
+/*JavaScript*/
+//Creo las variables que accederan a nuestros clases y etiquetas del HTML
+const btn = document.querySelector('.button__dark')
+const body = document.querySelector('body')
+
+//Cuando de click al icon a nuestra varaible body le agregara la clase darkmode
+btn.addEventListener('click', ()=> {
+    body.classList.toggle('darkmode')
+})
