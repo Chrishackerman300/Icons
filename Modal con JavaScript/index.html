@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+    <title>Modal con JavaScript Animado</title>
+</head>
+<body>
+    <button class="open--modal">
+        <span class="button__paragraph">Ver Informacion</span>
+    </button>
+
+    <section class="modal">
+        <div class="modal__container container">
+            <figure class="modal__picture">
+                <img src="/img/tree.svg" alt="banner" class="modal__banner">
+            </figure>
+
+            <div class="modal__texts">
+                <h1 class="title">Ayudanos a decir no a la reforestacion</h1>
+                <p class="paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio officiis corrupti eveniet ipsam in nisi inventore aut suscipit ipsum, mollitia, cumque beatae odio vitae aspernatur explicabo aliquid delectus dolor cum! A dignissimos velit corrupti delectus?</p>
+                <a href="#" class="cta">
+                    <span class="cta__paragraph">Mas Informacion</span>
+                </a>
+            </div>
+
+            <button class="close--modal">
+                <i class="bi bi-x-circle-fill icon"></i>
+            </button>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
