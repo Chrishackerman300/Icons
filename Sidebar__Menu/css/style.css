@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@300;400;500;700&family=Bai+Jamjuree:wght@300;400;500;700&family=Barlow+Semi+Condensed:wght@300;400;500;700&family=Big+Shoulders+Display:wght@300;400;500;700&family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,700&family=Hanken+Grotesk:wght@300;400;500;700&family=Inter:wght@300;400;500;700&family=Montserrat:wght@300;400;500;700&family=Open+Sans:wght@300;400;500;700&family=Poppins:wght@300;400;500;700&display=swap');
+
+:root{
+    --bg-header: #6C63FF;
+    --bg-sidebar: #6C63FF;
+    --color: #fff;
+    --bg-darkmode: #121212;
+    --font: 'Inter', sans-serif;
+}
+
+body{
+    width: 100%;
+    font-family: var(--font);
+    transition: all .3s ease;
+}
+
+.hero{
+    width: 100%;
+    background: var(--bg-sidebar);
+    position: relative;
+}
+
+.hero__main{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.open-menu{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.menu-icon{
+    font-size: 30px;
+    color: var(--color);
+    font-weight: bold;
+}
+
+.navegation__menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: var(--bg-sidebar);
+    width: 370px;
+    height: 100vh;
+    transform: translateX(-100%);
+    transition: transform .3s ease;
+}
+
+.navegation__menu.show-menu{
+    transform: translateX(0);
+    box-shadow: 0 0 0 100vmax rgba(0,0,0,.3);
+}
+
+.close-menu{
+    border: none;
+    background: none;
+    cursor: pointer;
+    position: absolute;
+    top: 25px;
+    left: 1px;
+}
+
+.navegation__items{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 90px 10px;
+}
+
+.navegation__link{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--color);
+    font-weight: 300;
+    margin-bottom: 20px;
+    transition: all .3s ease;
+}
+
+.icon{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.navegation__link:hover{
+    background: var(--color);
+    color: var(--bg-header);
+}
+
+.hero__links{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.btn-submenu{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.submenu-icon{
+    font-size: 20px;
+    color: var(--color);
+    margin-left: 5px;
+}
+
+.navegation__link:nth-child(2){
+    background: none;
+    color: var(--color);
+}
+
+.submenu{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    display: none;
+}
+
+.submenu.show-submenu{
+    display: block;
+}
+
+.submenu__link{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--color);
+    text-decoration: none;
+    margin-bottom: 20px;
+    transition: all .3s ease;
+}
+
+.submenu__link:hover{
+    background: var(--color);
+    color: var(--bg-sidebar);
+}
+
+.links{
+    color: var(--color);
+    font-weight: 400;
+    padding: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    border-top: 3px solid transparent;
+    transition: all .3s ease;
+}
+
+.links:hover{
+    border-top: 3px solid #fff;
+}
+
+.hero__picture{
+    display: block;
+    width: 15%
+}
+
+.logo{
+    display: block;
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+}
+
+.input__container{
+    width: 100%;
+}
+
+.input{
+    display: none;
+}
+
+.label{
+    display: inline-block;
+    position: relative;
+    width: 100px;
+    height: 40px;
+    background: var(--color);
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.label::before{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: var(--bg-header);
+    border-radius: 50%;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    transition: all .3s ease;
+}
+
+.input:checked + .label::before{
+    left: 64px;
+    background: #121212;
+}
+
+.darkmode .hero,
+.darkmode .navegation__menu{
+    background: var(--bg-darkmode);
+}
+
+.darkmode .navegation__link:hover,
+.darkmode .submenu__link:hover{
+    color: var(--bg-darkmode);
+}
+
+.darkmode .navegation__link:nth-child(2):hover{
+    color: var(--color);
+}
+
+@media screen and (max-width: 500px){
+    .hero__links{
+        display: none;
+    }
+
+    .hero__main{
+        justify-content: space-between;
+    }
+
+    .hero__picture{
+        width: 25%;
+    }
+
+    .logo{
+        width: 80px;
+        height: 80px;
+    }
+
+    .navegation__menu{
+        width: 100%;
+    }
+}
