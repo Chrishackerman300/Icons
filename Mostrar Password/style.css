@@ -1,0 +1,28 @@
+body{
+    font-family: sans-serif;
+}
+
+.input{
+    padding: 10px;
+    outline: none;
+    font-size: 1rem;
+}
+
+.btn-password{
+    background: none;
+    cursor: pointer;
+    border: none;
+    transform: translateX(-38px);
+}
+
+.bi-eye-fill{
+    font-size: 20px;
+    font-weight: 400;
+    color:#2e4053;
+}
+
+.bi-eye-slash-fill{
+    font-size: 20px;
+    font-weight: 400;
+    color:#2e4053;
+}
